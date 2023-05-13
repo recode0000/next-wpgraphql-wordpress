@@ -1,11 +1,15 @@
-import styles from './Header.module.scss'
+import styles from './Header.module.scss';
+import Link from 'next/link';
 
 const Header = () => {
   return (
-    <>
-      <div className={styles.primary}>Header</div>
-      <div className={styles.primary__test}>White</div>
-    </>
+      <header>
+        <div>
+          <h1>
+            <Link href="/">HOME</Link>
+          </h1>
+        </div>
+      </header>
   )
 }
 
